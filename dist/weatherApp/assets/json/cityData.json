@@ -1,0 +1,29 @@
+{
+    "cities" : [
+        {
+            "id" : 1,
+            "city" : "Paris",
+            "country" : "fr"
+        },
+        {
+            "id" : 2,
+            "city" : "London",
+            "country" : "uk"
+        },
+        {
+            "id" : 3,
+            "city" : "Rome",
+            "country" : "us"
+        },
+        {
+            "id" : 4,
+            "city" : "Florence",
+            "country" : "it"
+        },
+        {
+            "id" : 5,
+            "city" : "Barcelona",
+            "country" : "es"
+        }
+    ]
+}

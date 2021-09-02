@@ -1,0 +1,14 @@
+<!-- Core Structure Frame -->
+<div class="page-frame">
+  <div class="frame-header animate__animated animate__slideInDown">
+    <app-header></app-header>
+  </div>
+  <div class="frame-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- Gobal Loader -->
+<div class="page-loader" *ngIf="loader">
+  <img src="/assets/images/custom-loader-transparent.gif" />
+</div>

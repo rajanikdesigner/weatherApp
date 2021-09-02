@@ -1,0 +1,47 @@
+.inner-page {
+    width: 100%;
+    padding: 20px 0px;
+
+    @media screen and (max-width: 576px) {
+        padding: 10px 0px;
+    }
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
+
+    .weather-left {
+        width: 30%;
+        padding-right: 10px;
+
+        @media screen and (max-width: 767px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            padding: 10px 0px;
+        }
+    }
+
+    .weather-right {
+        width: 70%;
+        padding-left: 10px;
+
+        @media screen and (max-width: 767px) {
+            width: 60%;
+            padding: 0px;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            padding: 10px 0px;
+        }
+    }
+}

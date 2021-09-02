@@ -1,0 +1,14 @@
+<div class="city-weather" *ngIf="forecastData?.dt">
+    <div class="weather-icon"><app-weather-symbol [symbolData]="forecastData.weather[0].main"></app-weather-symbol></div>
+    <h2>{{ forecastData.dt_txt | date: 'mediumDate' }}
+        <span>{{ forecastData.dt_txt | date: 'mediumTime' }}</span>
+    </h2>
+    <div class="city-data-col">
+        <label>{{ sharedConstant.TEMPERATURE }}</label>
+        <span>{{ forecastData.main.temp }}<app-celsius-symbol></app-celsius-symbol></span>
+    </div>
+    <div class="city-data-col">
+        <label>{{ sharedConstant.SEA_LEVEL }}</label>
+        <span>{{ forecastData.main.sea_level }}</span>
+    </div>
+</div>

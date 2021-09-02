@@ -1,0 +1,11 @@
+<div class="home-page animate__animated animate__slideInLeft">
+    <div class="page-container">
+        <div class="city-list" *ngIf="cityData.length > 0">
+            <div class="city-row">
+                <div class="city-col" *ngFor="let city of cityData;trackBy:trackByFn" (click)="redirectToDetails(city.id)">
+                    <app-city-weather [cityData]="city"></app-city-weather>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>

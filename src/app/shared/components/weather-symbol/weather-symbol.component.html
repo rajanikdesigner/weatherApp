@@ -1,0 +1,10 @@
+<div class="weather-symbol" *ngIf="icons">
+    <fa-icon *ngIf="symbolData == 'Clouds'" [icon]="icons.clouds"></fa-icon>
+    <fa-icon *ngIf="symbolData == 'Clear'" [icon]="icons.clear"></fa-icon>
+    <fa-icon *ngIf="symbolData == 'Rain'" [icon]="icons.rain"></fa-icon>
+    <fa-icon *ngIf="symbolData == 'Thunderstorm'" [icon]="icons.thunderstorm"></fa-icon>
+    <fa-icon *ngIf="symbolData == 'Snow'" [icon]="icons.snow"></fa-icon>
+    <fa-icon *ngIf="symbolData == 'Drizzle'" [icon]="icons.drizzle"></fa-icon>
+    <fa-icon *ngIf="symbolData == 'Smoke'" [icon]="icons.smoke"></fa-icon>
+    <fa-icon *ngIf="symbolData == 'Fog'" [icon]="icons.fog"></fa-icon>
+</div>

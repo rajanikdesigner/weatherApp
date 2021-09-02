@@ -1,0 +1,23 @@
+@import "src/assets/scss/config";
+
+.celsius-symbol {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-left: 5px;
+
+    .celsius-circle {
+        width: 6px;
+        height: 6px;
+        @include border-radius(100%);
+        border:2px solid $border-gray;
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 0px;
+    }
+
+    label {
+        padding-left: 8px;
+    }
+}

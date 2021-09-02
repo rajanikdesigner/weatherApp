@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/scss/config";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    @include box-sizing;
+    @include roboto-regular;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @include roboto-slab-regular;
+}
+
+html, body { height: 100%; }
+
+
+.page-container {
+    max-width: 1170px;
+    padding: 0px 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.btn {
+    background: $color-white;
+    font-size: $font-regular;
+    color: $color-dark-gray;
+    outline: none;
+    border:1px solid $color-white;
+    @include border-radius(4px);
+    padding: 5px 15px;
+    height: 35px;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+        @include box-shadow(0 0 5px $shadow-5);
+    }
+} 

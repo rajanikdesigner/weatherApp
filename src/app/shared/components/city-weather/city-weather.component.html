@@ -1,0 +1,21 @@
+<div class="city-weather" >
+    <ng-container *ngIf="!sectionLoader && weatherData.weather.length > 0">
+        <div class="weather-icon"><app-weather-symbol [symbolData]="weatherData.weather[0].main"></app-weather-symbol></div>
+        <h2>{{ weatherData.name }}</h2>
+        <div class="city-data-row">
+            <div class="city-data-col">
+                <label>{{ sharedConstant.TEMPERATURE }}</label>
+                <span>{{ weatherData.main.temp }}<app-celsius-symbol></app-celsius-symbol></span>
+            </div>
+            <div class="city-data-col">
+                <label>{{ sharedConstant.SUNRISE_TIME }}</label>
+                <span>{{ weatherData.sys.sunrise | date: 'shortTime' }}</span>
+            </div>
+            <div class="city-data-col">
+                <label>{{ sharedConstant.SUNSET_TIME }}</label>
+                <span>{{ weatherData.sys.sunset | date: 'shortTime'}}</span>
+            </div>
+        </div>
+    </ng-container>
+    <app-section-loader *ngIf="sectionLoader"></app-section-loader>
+</div>

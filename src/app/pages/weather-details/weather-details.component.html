@@ -1,0 +1,12 @@
+<div class="inner-page animate__animated animate__slideInLeft">
+    <div class="page-container">
+        <div class="weather-details" *ngIf="selectedCity">
+            <div class="weather-left">
+                <app-city-weather [cityData]="selectedCity"></app-city-weather>
+            </div>
+            <div class="weather-right">
+                <app-city-forcast [cityData]="selectedCity"></app-city-forcast>
+            </div>
+        </div>
+    </div>
+</div>

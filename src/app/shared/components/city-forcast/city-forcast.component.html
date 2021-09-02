@@ -1,0 +1,8 @@
+<div class="weather-forcast">
+    <ng-container *ngIf="!sectionLoader && weatherData.length > 0">
+        <div class="forcast-row" *ngFor="let data of weatherData;trackBy:trackByFn">
+            <app-city-sea-level [forecastData]="data"></app-city-sea-level>
+        </div>
+    </ng-container>
+    <app-section-loader *ngIf="sectionLoader"></app-section-loader>
+</div>
